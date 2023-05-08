@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -55,12 +55,17 @@ header a.heroes, header a.book {
     line-height: 100%;
 }
 
-header a.name {
+header a:hover {
+    color: #A51842;
+}
+
+header .name {
     margin-left: 20.25px;
     font-size: 40px;
     line-height: 100%;
     font-weight: 700;
     /* width: 406px; */
+    margin-bottom: 16px;
 }
 
 header a.heroes {
@@ -85,13 +90,10 @@ header a.author {
     /* width: 283px; */
 }
 
-header a:hover {
-    color: #A51842;
-}
+
 
 header a.heroes:hover, header a.book:hover {
     transform: scale(1.2);
-    color: #3A211D;
 }
 
 
@@ -113,7 +115,7 @@ main .left {
 .left .header {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 60px;
     line-height: 73px;
     display: flex;
