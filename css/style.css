@@ -26,6 +26,7 @@ header {
     height: fit-content;
     display: flex;
     align-items: end;
+    position: relative;
 }
 
 header a {
@@ -68,20 +69,24 @@ header .name {
     margin-bottom: 16px;
 }
 
+header a.heroes, header a.book {
+    position: absolute;
+}
+
 header a.heroes {
-    margin-left: 93.75px;
+    left: 612.79px;
     
     /* width: 94px; */
 }
 
 header a.book {
-    font-style: normal;
-    margin-left: 36px;
+    left: 727.79px;
     /* width: 96px; */
 }
 
 header a.author {
-    margin-left: 93px;
+    position: absolute;
+    right: 0;
     font-size: 38px;
     font-weight: 600;
     line-height: 100%;
@@ -93,7 +98,7 @@ header a.author {
 
 
 header a.heroes:hover, header a.book:hover {
-    transform: scale(1.2);
+    font-weight: 700;
 }
 
 
