@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +14,8 @@
 
 body {
     font-family: Montserrat, serif;
+    color: #3A211D;
+    font-weight: 400;
 }
 
 body a {
@@ -21,9 +23,16 @@ body a {
 }
 
 header {
-    height: 72px;
+    height: fit-content;
     display: flex;
+    align-items: end;
 }
+
+header a {
+    margin-bottom: 16px;
+}
+
+
 
 .screen header a {
     text-decoration: none;
@@ -36,8 +45,11 @@ header {
     width: 78px;
 }
 
+a.logo {
+    margin-bottom: 0;
+}
+
 header a.name {
-    margin: 16px 0;
     margin-left: 20.25px;
     font-size: 40px;
     line-height: 100%;
@@ -46,8 +58,8 @@ header a.name {
 }
 
 header a.heroes {
-    margin: 22px 0 20px 93.75px;
-    font-size: 30px;
+    margin-left: 93.75px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 100%;
     /* width: 94px; */
@@ -55,15 +67,15 @@ header a.heroes {
 
 header a.book {
     font-style: normal;
-    margin: 20px 0 22px 36px;
-    font-size: 30px;
+    margin-left: 36px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 100%;
     /* width: 96px; */
 }
 
 header a.author {
-    margin: 17px 0 17px 93px;
+    margin-left: 93px;
     font-size: 38px;
     font-weight: 600;
     line-height: 100%;
@@ -71,6 +83,13 @@ header a.author {
     text-align: right;
     /* width: 283px; */
 }
+
+header a:hover {
+    color: #A51842;
+}
+
+
+
 
 main {
     display: flex;
@@ -90,7 +109,7 @@ main .left {
 .left .header {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 60px;
     line-height: 73px;
     display: flex;
@@ -100,7 +119,7 @@ main .left {
 }
 
 .left p {
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
@@ -125,7 +144,11 @@ main .left {
     line-height: 34px;
     border-radius: 40px;
     margin-left: 5px;
-    margin-top: 39.52px;
+    margin-top: 70px;
+}
+
+.left a.start-reading:hover {
+    background-color: #B0E893;
 }
 
 .right img {
@@ -150,30 +173,35 @@ footer div {
 
 footer div.readers {
     text-align: right;
+    justify-content: center;
 }
 
 .copyright {
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 20px;
 
-    color: #3A211D;
+    
     vertical-align: bottom;
 }
 
 .readers {
-    display: inline-block;
-    padding: 16px 60px;
-    gap: 16px;
     background: #E8E7E6;
     border-radius: 16px;
-    font-size: 24px;
-    line-height: 29px;  
+    font-size: 16px;
+    line-height: 100%;
+
+    width: 243px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .reader-num {
     display: inline;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 10px;
 }
