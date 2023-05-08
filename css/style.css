@@ -1,0 +1,179 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.screen {
+    max-width: 1200px;
+    /* height: 854px; */
+    margin: auto;
+}
+
+body {
+    font-family: Montserrat, serif;
+}
+
+body a {
+    color: #3A211D;
+}
+
+header {
+    height: 72px;
+    display: flex;
+}
+
+.screen header a {
+    text-decoration: none;
+}
+
+.logo img{
+    /* height: 73.66px;
+    width: 79.17px; */
+    height: 72px;
+    width: 78px;
+}
+
+header a.name {
+    margin: 16px 0;
+    margin-left: 20.25px;
+    font-size: 40px;
+    line-height: 100%;
+    font-weight: 700;
+    /* width: 406px; */
+}
+
+header a.heroes {
+    margin: 22px 0 20px 93.75px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 100%;
+    /* width: 94px; */
+}
+
+header a.book {
+    font-style: normal;
+    margin: 20px 0 22px 36px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 100%;
+    /* width: 96px; */
+}
+
+header a.author {
+    margin: 17px 0 17px 93px;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #37342E;
+    text-align: right;
+    /* width: 283px; */
+}
+
+main {
+    display: flex;
+    height: 523px;
+    margin-top: 77px;
+}
+
+main .left, main .right {
+    float: left;
+    
+}
+
+main .left {
+    width: calc(100% - 667px);
+}
+
+.left .header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    display: flex;
+    align-items: center;
+    color: #3A211D;
+    margin-top: 26.48px;
+}
+
+.left p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    /* or 28px */
+
+    text-align: justify;
+    text-indent: 40px;
+    width: 446px;
+}
+
+.left p.public {
+    margin-left: 2px;
+}
+
+.left a.start-reading {
+    display: inline-block;
+    background-color:  #86C266;
+    padding: 20px 70px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    border-radius: 40px;
+    margin-left: 5px;
+    margin-top: 39.52px;
+}
+
+.right img {
+    width: 667px;
+    height: 523px;
+}
+
+footer {
+    float: left;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div {
+    text-align: left;
+}
+
+footer div.readers {
+    text-align: right;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #3A211D;
+    vertical-align: bottom;
+}
+
+.readers {
+    display: inline-block;
+    padding: 16px 60px;
+    gap: 16px;
+    background: #E8E7E6;
+    border-radius: 16px;
+    font-size: 24px;
+    line-height: 29px;  
+}
+
+.reader-num {
+    display: inline;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
