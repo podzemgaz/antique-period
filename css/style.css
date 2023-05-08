@@ -49,6 +49,12 @@ a.logo {
     margin-bottom: 0;
 }
 
+header a.heroes, header a.book {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
 header a.name {
     margin-left: 20.25px;
     font-size: 40px;
@@ -59,18 +65,13 @@ header a.name {
 
 header a.heroes {
     margin-left: 93.75px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 100%;
+    
     /* width: 94px; */
 }
 
 header a.book {
     font-style: normal;
     margin-left: 36px;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 100%;
     /* width: 96px; */
 }
 
@@ -88,7 +89,9 @@ header a:hover {
     color: #A51842;
 }
 
-
+header a.heroes:hover, header a.book:hover {
+    font-weight: 700;
+}
 
 
 main {
