@@ -90,7 +90,8 @@ header a:hover {
 }
 
 header a.heroes:hover, header a.book:hover {
-    font-weight: 700;
+    transform: scale(1.2);
+    color: #3A211D;
 }
 
 
@@ -124,7 +125,7 @@ main .left {
 .left p {
     margin-top: 30px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 140%;
     /* or 28px */
 
