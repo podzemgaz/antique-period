@@ -16,44 +16,43 @@ body {
     font-family: Montserrat, serif;
     color: #3A211D;
     font-weight: 400;
-}
-
-body a {
-    color: #3A211D;
+    background-color: #FFFEF8;
 }
 
 header {
-    height: fit-content;
-    display: flex;
-    align-items: end;
     position: relative;
+    height: 72px;
+    
 }
 
-header a {
-    margin-bottom: 16px;
-}
+header a, header div {
+    display: inline-block;
 
+    line-height: .65em;
+    position: absolute;
+    bottom: 20px;
+    /* vertical-align: sub; */
+}
 
 
 .screen header a {
     text-decoration: none;
+    color: #3A211D;
 }
 
-.logo img{
-    /* height: 73.66px;
-    width: 79.17px; */
+
+a.logo img{
     height: 72px;
     width: 78px;
 }
 
 a.logo {
-    margin-bottom: 0;
+    bottom: 0;
 }
 
 header a.heroes, header a.book {
     font-size: 24px;
     font-weight: 600;
-    line-height: 100%;
 }
 
 header a:hover {
@@ -61,38 +60,24 @@ header a:hover {
 }
 
 header .name {
-    margin-left: 20.25px;
     font-size: 40px;
-    line-height: 100%;
     font-weight: 700;
-    /* width: 406px; */
-    margin-bottom: 16px;
-}
-
-header a.heroes, header a.book {
-    position: absolute;
+    left: 95px;
 }
 
 header a.heroes {
     left: 612.79px;
-    
-    /* width: 94px; */
 }
 
 header a.book {
     left: 727.79px;
-    /* width: 96px; */
 }
 
 header a.author {
-    position: absolute;
     right: 0;
     font-size: 38px;
     font-weight: 600;
-    line-height: 100%;
     color: #37342E;
-    text-align: right;
-    /* width: 283px; */
 }
 
 
