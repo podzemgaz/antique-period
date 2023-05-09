@@ -157,10 +157,11 @@ footer {
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 113px;
+    margin-top: 83px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 footer div {
