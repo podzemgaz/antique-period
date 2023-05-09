@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
 * {
     padding: 0;
@@ -7,7 +6,6 @@
 
 .screen {
     max-width: 1200px;
-    /* height: 854px; */
     margin: auto;
     margin-top: 40px;
 }
@@ -25,15 +23,19 @@ header {
     
 }
 
-header a, header div {
+header button, header div {
     display: inline-block;
 
     line-height: .65em;
     position: absolute;
     bottom: 20px;
-    /* vertical-align: sub; */
+    background: none;
+    border: 0;
 }
 
+header button {
+    cursor: pointer;
+}
 
 .screen header a {
     text-decoration: none;
@@ -41,21 +43,27 @@ header a, header div {
 }
 
 
-a.logo img{
+button.logo img{
     height: 72px;
     width: 78px;
 }
 
-a.logo {
+button.logo {
     bottom: 0;
 }
 
-header a.heroes, header a.book {
+header button.heroes, header button.book {
     font-size: 24px;
     font-weight: 600;
 }
 
-header a:hover {
+
+header button.active {
+    color: #8F7A6B;
+    font-weight: 700;
+}
+
+header button:hover {
     color: #A51842;
 }
 
@@ -65,15 +73,15 @@ header .name {
     left: 95px;
 }
 
-header a.heroes {
+header button.heroes {
     left: 612.79px;
 }
 
-header a.book {
+header button.book {
     left: 727.79px;
 }
 
-header a.author {
+header button.author {
     right: 0;
     font-size: 38px;
     font-weight: 600;
@@ -81,76 +89,10 @@ header a.author {
 }
 
 
-
-header a.heroes:hover, header a.book:hover {
+header button.heroes:hover, header button.book:hover {
     font-weight: 700;
 }
 
-
-main {
-    display: flex;
-    height: 523px;
-    margin-top: 77px;
-}
-
-main .left, main .right {
-    float: left;
-    
-}
-
-main .left {
-    width: calc(100% - 667px);
-}
-
-.left .header {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 73px;
-    display: flex;
-    align-items: center;
-    color: #3A211D;
-    margin-top: 26.48px;
-}
-
-.left p {
-    margin-top: 30px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 28px */
-
-    text-align: justify;
-    width: 446px;
-}
-
-.left p.public {
-    margin-left: 2px;
-}
-
-.left a.start-reading {
-    display: inline-block;
-    background-color:  #86C266;
-    padding: 20px 70px;
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    border-radius: 40px;
-    margin-left: 5px;
-    margin-top: 70px;
-}
-
-.left a.start-reading:hover {
-    background-color: #ADE390;
-}
-
-.right img {
-    width: 667px;
-    height: 523px;
-}
 
 footer {
     float: left;
