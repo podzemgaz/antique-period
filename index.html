@@ -20,6 +20,48 @@
 </head>
 
 <body>
+
+   
+<script>
+gtag('config', 'GA_MEASUREMENT_ID', {
+  'metric': 'ga:users',
+  'dateRange': {
+    'startDate': '30daysAgo',
+    'endDate': 'yesterday'
+  }
+});
+gtag('event', 'metric_view', {
+  'event_category': 'Unique Users',
+  'event_label': 'Viewed Unique Users Metric',
+  'value': 'ga:users'
+});
+gtag('event', 'metric_display', {
+  'event_category': 'Unique Users',
+  'event_label': 'Displayed Unique Users Metric',
+  'value': 'ga:users',
+  'non_interaction': true
+});
+gtag('event', 'metric_timing', {
+  'event_category': 'Unique Users',
+  'event_label': 'Timing of Unique Users Metric',
+  'value': 'ga:users'
+});
+
+// Получаем количество уникальных пользователей из Google Analytics и выводим на страницу
+gtag('event', 'metric_value', {
+  'event_category': 'Unique Users',
+  'event_label': 'Unique Users Metric Value',
+  'value': 'ga:users',
+  'non_interaction': true,
+  'callback': function(){
+    var uniqueUsers = parseInt(gtag('get', 'ga:users'));
+    var uniqueUsersDiv = document.getElementById('unique-users');
+    uniqueUsersDiv.innerHTML = 'Количество уникальных пользователей: ' + uniqueUsers;
+  }
+});
+</script>
+
+<div id="unique-users"></div>
     <div class="screen">
         <header>
             <button class="logo" href="">
@@ -69,8 +111,11 @@
             </div>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="oauth.js"></script>
+    <script src="analit.js"></script> -->
 </body>
 
 </html>
