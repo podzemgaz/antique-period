@@ -9,14 +9,14 @@
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LXQKXNVLW"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LXQKXNVLW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-6LXQKXNVLW');
-    </script>
+    </script> -->
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -37,91 +37,36 @@
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/93534568" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- <script>
-        gtag('config', 'G-6LXQKXNVLW', {
-        'metric': 'ga:users',
-        'dateRange': {
-            'startDate': '30daysAgo',
-            'endDate': 'yesterday'
-        }
-        });
-        gtag('event', 'metric_view', {
-        'event_category': 'Unique Users',
-        'event_label': 'Viewed Unique Users Metric',
-        'value': 'ga:users'
-        });
-        gtag('event', 'metric_display', {
-        'event_category': 'Unique Users',
-        'event_label': 'Displayed Unique Users Metric',
-        'value': 'ga:users',
-        'non_interaction': true
-        });
-        gtag('event', 'metric_timing', {
-        'event_category': 'Unique Users',
-        'event_label': 'Timing of Unique Users Metric',
-        'value': 'ga:users'
-        });
-        
-        // Получаем количество уникальных пользователей из Google Analytics и выводим на страницу
-        gtag('event', 'metric_value', {
-        'event_category': 'Unique Users',
-        'event_label': 'Unique Users Metric Value',
-        'value': 'ga:users',
-        'non_interaction': true,
-        'callback': function(){
-            var uniqueUsers = parseInt(gtag('get', 'ga:users'));
-            var uniqueUsersDiv = document.getElementById('unique-users');
-            uniqueUsersDiv.innerHTML = 'Количество уникальных пользователей: ' + uniqueUsers;
-        }
-        });
-    </script> -->
 
 </head>
 
 <body>
 
-    <!-- <div id="unique-users"></div> -->
     <div class="screen">
         <header>
-            <button class="logo" href="">
+            <button class="logo to-main" href="">
                 <img src="img/logo.png" alt="logo">
             </button>
 
-            <div class="name">
+            <button class="name to-main">
                 Античный Период
-            </div>
+            </button>
 
             <button class="heroes">
                 Герои
             </button>
 
-            <button href="#" class="book">
+            <button class="book to-book" id="book">
                 Книга
             </button>
 
-            <button class="author" href="#">
+            <button class="author">
                 Марк Миллер
             </button>
 
         </header>
         <main id="content">
-            <!-- <div class="left">
-                <div class="header">
-                    Первые боги олимпийцы
-                </div>
-                <p>
-                    Книга рассказывает о приключениях юных Богов и Богинь олимпийцев, о том, как росли и учились
-                    три родных сестры — дочери Зевса и Геры.
-                </p>
-                <a href="#" class="start-reading">
-                    Начать читать!
-                </a>
-            </div>
-            <div class="right">
-                <img src="img/Frame 1.png" alt="Frame 1">
-            </div> -->
+            
         </main>
         <footer>
             <div class="copyright">
@@ -132,10 +77,8 @@
             </div>
         </footer>
     </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="app.js"></script>
+    <!--
     <script src="https://apis.google.com/js/api.js"></script>
-    <script src="oauth.js"></script>
     <script src="analit.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>

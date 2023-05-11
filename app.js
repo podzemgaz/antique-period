@@ -1,18 +1,37 @@
-
+init();
 const heroes = document.getElementsByClassName('heroes')[0];
-const logo = document.getElementsByClassName('logo')[0];
+const toMain = document.getElementsByClassName('to-main');
 const content = document.getElementById('content');
+const book = document.getElementById('book');
+
 
 
 
 heroes.addEventListener('click', setActiveHeroes);
-logo.addEventListener('click', setActiveLog);
+
+book.addEventListener('click', setActiveBook);
+
+
+
+for (let index = 0; index < toMain.length; index++) {
+    const element = toMain[index];
+    element.addEventListener('click', toMainPage);
+}
 
 function init() {
     $.get(getActivePage(), function(data) {
         content.innerHTML = data;
+        let startReading = document.querySelector('#start-reading');
+        if (startReading) {
+            startReading.addEventListener('click', setActiveBook);
+        }
         addActive();
     });
+    // setTimeout(() => {
+    //     let startReading = document.querySelector('#start-reading');
+
+    // console.log(startReading);
+    // }, 1000);
 }
 
 function getActivePage() {
@@ -33,7 +52,7 @@ function getActiveElement() {
 function addActive() {
     const activeElement = getActiveElement();
     if (activeElement) {
-        console.log(true);
+        // console.log(true);
         activeElement.classList.add('active');
     }
 }
@@ -41,7 +60,7 @@ function addActive() {
 function removeActive() {
     const activeElement = getActiveElement();
     if (activeElement) {
-        console.log(true);
+        // console.log(true);
         activeElement.classList.remove('active');
     }
 }
@@ -54,10 +73,16 @@ function setActiveHeroes() {
     init();
 }
 
-function setActiveLog() {
+function setActiveBook() {
+    removeActive();
+    localStorage.setItem('ACTIVE_PAGE', 'book.html');
+
+    book.classList.add('active');
+    init();
+}
+
+function toMainPage() {
     removeActive();
     localStorage.setItem('ACTIVE_PAGE', '');
     init();
 }
-
-init();

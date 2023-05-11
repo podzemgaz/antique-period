@@ -39,7 +39,7 @@ main .left {
     margin-left: 2px;
 }
 
-.left a.start-reading {
+.left button.start-reading {
     display: inline-block;
     background-color:  #86C266;
     padding: 20px 70px;
@@ -51,9 +51,11 @@ main .left {
     border-radius: 40px;
     margin-left: 5px;
     margin-top: 70px;
+    border: none;
+    cursor: pointer;
 }
 
-.left a.start-reading:hover {
+.left button.start-reading:hover {
     background-color: #ADE390;
 }
 

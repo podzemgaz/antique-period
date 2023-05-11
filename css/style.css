@@ -23,7 +23,7 @@ header {
     
 }
 
-header button, header div {
+header button {
     display: inline-block;
     color: #3A211D;
     line-height: .65em;
@@ -31,9 +31,7 @@ header button, header div {
     bottom: 20px;
     background: none;
     border: 0;
-}
-
-header button {
+    font-family: Montserrat, serif;
     cursor: pointer;
 }
 
@@ -53,20 +51,19 @@ header button.heroes, header button.book {
 }
 
 
-header button.active {
+
+header button.active, header button:hover {
     color: #A51842;
     font-weight: 700;
 }
 
-header button:hover {
-    color: #A51842;
-}
-
-header .name {
+header button.name {
+    color: #3A211D;
     font-size: 40px;
     font-weight: 700;
     left: 95px;
 }
+
 
 header button.heroes {
     left: 612.79px;
