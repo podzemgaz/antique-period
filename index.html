@@ -66,14 +66,14 @@
 
         </header>
         <main id="content">
-            
+
         </main>
         <footer>
             <div class="copyright">
                 2021-2023 &copy; trunovvitaly
             </div>
             <div class="readers">
-                Всего читателей <span class="reader-num">384</span>
+                Всего читателей <span class="reader-num" id="unique-users"></span>
             </div>
         </footer>
     </div>
@@ -82,6 +82,15 @@
     <script src="analit.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
+    <!-- Скрипт для получения и отображения количества уникальных пользователей -->
+    <script type="text/javascript">
+        ym(93534568, "reachGoal", "unique_users", {
+            callback: function () {
+                var uniqueUsers = ym(93534568).getClientID();
+                document.getElementById("unique-users").innerHTML = uniqueUsers;
+            }
+        });
+    </script>
 </body>
 
 </html>
