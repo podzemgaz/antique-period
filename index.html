@@ -82,15 +82,23 @@
     <script src="analit.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="app.js"></script>
-    <!-- Скрипт для получения и отображения количества уникальных пользователей -->
+
+    <!-- Скрипт для получения и отображения данных о посещениях -->
     <script type="text/javascript">
-        ym(93534568, "reachGoal", "unique_users", {
-            callback: function () {
-                var uniqueUsers = ym(93534568).getClientID();
+        var url = "https://api-metrika.yandex.net/stat/v1/data?ids=93534568&metrics=ym:s:users&date1=30daysAgo&date2=today&oauth_token=y0_AgAAAAALVTRCAAnjxAAAAADi8V1XuVYnrd4kTwKDGAstCSJdEKDg09U";
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                // получаем количество уникальных пользователей
+                var uniqueUsers = data.data[0].metrics[0];
+                console.log("Количество уникальных пользователей: " + uniqueUsers);
                 document.getElementById("unique-users").innerHTML = uniqueUsers;
-            }
-        });
+                // здесь можно обработать полученные данные
+            })
+            .catch(error => console.error(error));
     </script>
+
 </body>
 
 </html>
