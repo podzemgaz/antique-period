@@ -33,6 +33,7 @@ main .left {
 
     text-align: justify;
     width: 446px;
+    margin-left: 2px;
 }
 
 .left p.public {
@@ -62,4 +63,21 @@ main .left {
 .right img {
     width: 667px;
     height: 523px;
+}
+
+@media (max-width: 1136px) {
+    .right img {
+        width: 605px;
+        height: 474px;
+    }
+
+    main .left {
+        width: calc(100% - 605px);
+    }
+
+    main .left .header {
+        font-size: 53px;
+        line-height: 65px;
+        font-weight: 600;
+    }
 }

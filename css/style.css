@@ -91,11 +91,11 @@ footer {
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 83px;
+    margin-top: 43px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 footer div {
@@ -135,4 +135,45 @@ footer div.readers {
     font-size: 20px;
     line-height: 24px;
     margin-left: 10px;
+}
+
+@media (max-width: 1136px) {
+
+    .screen {
+        margin-top: 0;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    button.logo img{
+        height: 60px;
+        width: 65px;
+    }
+
+    header button.name {
+        left: 80px;
+        font-size: 36px;
+    }
+
+    header button.heroes {
+        left: 543px;
+    }
+
+    header button.book {
+        left: 658px;
+    }
+
+    header button.author {
+        font-size: 32px;
+    }
+
+    footer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    
 }
