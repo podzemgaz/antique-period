@@ -137,7 +137,7 @@ footer div.readers {
     margin-left: 10px;
 }
 
-@media (max-width: 1136px) {
+@media (max-width: 1336px) {
 
     .screen {
         margin-top: 0;
@@ -145,6 +145,10 @@ footer div.readers {
 
     header {
         height: 60px;
+    }
+
+    header button {
+        bottom: 15px;
     }
 
     button.logo img{
@@ -172,8 +176,89 @@ footer div.readers {
     footer {
         margin-top: 0;
         margin-bottom: 0;
+    }  
+}
+
+@media (max-width: 1152px) {
+    .screen {
+        margin-top: 10px;
     }
 
+    header {
+        height: 48px;
+    }
 
+    header button {
+        bottom: 10px;
+    }
+
+    button.logo img{
+        height: 48px;
+        width: 52.27px;
+    }
+
+    header button.name {
+        left: 71px;
+        font-size: 34px;
+    }
+
+    header button.heroes {
+        left: 510px;
+        font-size: 22px;
+    }
+
+    header button.book {
+        left: 616px;
+        font-size: 22px;
+    }
+
+    header button.author {
+        font-size: 30px;
+    }
+
+    /* footer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }   */
+}
+
+@media (max-width: 1024px) {
     
+
+    header {
+        height: 48px;
+    }
+
+    header button {
+        bottom: 10px;
+    }
+
+    button.logo img{
+        height: 48px;
+        width: 52.27px;
+    }
+
+    header button.name {
+        left: 71px;
+        font-size: 34px;
+    }
+
+    header button.heroes {
+        left: 510px;
+        font-size: 22px;
+    }
+
+    header button.book {
+        left: 616px;
+        font-size: 22px;
+    }
+
+    header button.author {
+        font-size: 30px;
+    }
+
+    /* footer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }   */
 }

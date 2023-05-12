@@ -40,7 +40,7 @@ main .left {
     margin-left: 2px;
 }
 
-.left button.start-reading {
+.left button {
     display: inline-block;
     background-color:  #86C266;
     padding: 20px 70px;
@@ -65,7 +65,7 @@ main .left {
     height: 523px;
 }
 
-@media (max-width: 1136px) {
+@media (max-width: 1336px) {
     .right img {
         width: 605px;
         height: 474px;
@@ -79,5 +79,66 @@ main .left {
         font-size: 53px;
         line-height: 65px;
         font-weight: 600;
+    }
+
+    /* main .left p {
+        font-size: 14px;
+    } */
+
+    main .left button {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 1152px) {
+    .right img {
+        width: 565px;
+        height: 446px;
+    }
+
+    main .left {
+        width: calc(100% - 565px);
+    }
+
+    main .left .header {
+        font-size: 50px;
+        line-height: 61px;
+        /* font-weight: 600; */
+    }
+
+    /* main .left p {
+        font-size: 13px;
+    } */
+
+    main .left button {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .right img {
+        width: 476px;
+        height: 375.75px;
+    }
+
+    main .left {
+        width: calc(100% - 476px);
+    }
+
+    main .left .header {
+        font-size: 42px;
+        line-height: 51px;
+        /* font-weight: 600; */
+    }
+
+    /* main .left p {
+        font-size: 14px;
+    } */
+
+    main .left button {
+        font-size: 22px;
+        line-height: 27px;
     }
 }
