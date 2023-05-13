@@ -66,11 +66,11 @@ header button.name {
 
 
 header button.heroes {
-    left: 612.79px;
+    left: 51%;
 }
 
 header button.book {
-    left: 727.79px;
+    left: 60%;
 }
 
 header button.author {
@@ -141,6 +141,7 @@ footer div.readers {
 
     .screen {
         margin-top: 0;
+        margin-left: 10px;
     }
 
     header {
@@ -161,16 +162,17 @@ footer div.readers {
         font-size: 36px;
     }
 
-    header button.heroes {
+    /* header button.heroes {
         left: 543px;
     }
 
     header button.book {
         left: 658px;
-    }
+    } */
 
     header button.author {
         font-size: 32px;
+        right: 5px;
     }
 
     footer {
@@ -203,12 +205,12 @@ footer div.readers {
     }
 
     header button.heroes {
-        left: 510px;
+        /* left: 510px; */
         font-size: 22px;
     }
 
     header button.book {
-        left: 616px;
+        /* left: 616px; */
         font-size: 22px;
     }
 
@@ -243,15 +245,15 @@ footer div.readers {
         font-size: 34px;
     }
 
-    header button.heroes {
-        left: 510px;
+    /* header button.heroes {
+        left: 432px;
         font-size: 22px;
     }
 
     header button.book {
-        left: 616px;
+        left: 510px;
         font-size: 22px;
-    }
+    } */
 
     header button.author {
         font-size: 30px;

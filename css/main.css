@@ -31,9 +31,15 @@ main .left {
     line-height: 140%;
     /* or 28px */
 
-    text-align: justify;
-    width: 446px;
+    /* text-align: justify; */
+    /* display: inline-block; */
+    /* width: 446px; */
     margin-left: 2px;
+    /* width: 75%; */
+
+    width: 446px;
+    width: 80%;
+
 }
 
 .left p.public {
@@ -81,9 +87,9 @@ main .left {
         font-weight: 600;
     }
 
-    /* main .left p {
-        font-size: 14px;
-    } */
+    main .left p {
+        width: 90%;
+    }
 
     main .left button {
         font-size: 24px;
