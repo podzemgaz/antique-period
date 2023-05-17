@@ -1,18 +1,86 @@
-main {
+:root {
+    --font-size-h1: calc(30px + 2vw);
+}
+
+.main {
     display: flex;
+    font-family: 'Montserrat';
+    color: #3A211D;
+}
+
+.main h1 {
+    font-weight: 700;
+    font-size: var(--font-size-h1);
+    line-height: 118%;
+    margin-top: 26.48px;
+}
+
+.main h2 {
+    font-weight: 600;
+    font-size: var(--font-size-h1);
+    /* font-size: 60px;
+    line-height: 100%;
+    text-align: center; */
+    text-align: center;
+    line-height: 100%;
+}
+
+.main-page {
     height: 523px;
     margin-top: 77px;
 }
 
-main .left, main .right {
+.heroes-page {
+    height: 573px;
+    margin-top: 37px;
+}
+
+.heroes-page aside {
+    width: 22%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroes-page aside .heroes-list {
+    margin-top: 49px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.heroes-page aside .heroes-list .hero {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.heroes-page aside .heroes-list .active-hero {
+    padding: 6px 12px;
+    background-color: #E0D2B1;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+    border-radius: 10px;
+}
+
+.heroes-page .container {
+    width: 78%;
+    border: 1px solid green;
+}
+
+.main .left,
+.main .right {
     float: left;
 }
 
-main .left {
+.main .left {
     width: calc(100% - 667px);
 }
 
-.left .header {
+
+
+/* .main .left .header {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -22,9 +90,9 @@ main .left {
     align-items: center;
     color: #3A211D;
     margin-top: 26.48px;
-}
+} */
 
-.left p {
+.main .left p {
     margin-top: 30px;
     font-weight: 400;
     font-size: 16px;
@@ -42,13 +110,13 @@ main .left {
 
 }
 
-.left p.public {
+.main .left p.public {
     margin-left: 2px;
 }
 
-.left button {
+.main .left button {
     display: inline-block;
-    background-color:  #86C266;
+    background-color: #86C266;
     padding: 20px 70px;
     color: white;
     text-decoration: none;
@@ -62,88 +130,104 @@ main .left {
     cursor: pointer;
 }
 
-.left button.start-reading:hover {
+.main .left button.start-reading:hover {
     background-color: #ADE390;
 }
 
-.right img {
+.main .right img {
     width: 667px;
     height: 523px;
 }
 
 @media (max-width: 1336px) {
-    .right img {
+    .main h1 {
+        /* font-size: 53px;
+        line-height: 65px; */
+        font-weight: 600;
+    }
+
+    .main .right img {
         width: 605px;
         height: 474px;
     }
 
-    main .left {
+    .main .left {
         width: calc(100% - 605px);
     }
 
-    main .left .header {
+    .main .left .header {
         font-size: 53px;
         line-height: 65px;
         font-weight: 600;
     }
 
-    main .left p {
-        width: 90%;
+    .main .left p {
+        width: 80%;
     }
 
-    main .left button {
+    .main .left button {
         font-size: 24px;
         line-height: 29px;
     }
 }
 
 @media (max-width: 1152px) {
-    .right img {
+    /* .main h1 {
+        font-size: 50px;
+        line-height: 61px;
+    } */
+
+    .main .right img {
         width: 565px;
         height: 446px;
     }
 
-    main .left {
+    .main .left {
         width: calc(100% - 565px);
     }
 
-    main .left .header {
+    .main .left .header {
         font-size: 50px;
         line-height: 61px;
         /* font-weight: 600; */
     }
 
-    /* main .left p {
+    /* .main .left p {
         font-size: 13px;
     } */
 
-    main .left button {
+    .main .left button {
         font-size: 22px;
         line-height: 27px;
     }
 }
 
 @media (max-width: 1024px) {
-    .right img {
+    /* .main h1 {
+        font-size: 42px;
+        line-height: 51px;
+    } */
+
+    .main .right img {
         width: 476px;
         height: 375.75px;
     }
 
-    main .left {
+    .main .left {
         width: calc(100% - 476px);
     }
 
-    main .left .header {
+    .main .left .header {
         font-size: 42px;
         line-height: 51px;
         /* font-weight: 600; */
     }
 
-    /* main .left p {
+    /* .main .left p {
         font-size: 14px;
     } */
 
-    main .left button {
+    .main .left button {
         font-size: 22px;
         line-height: 27px;
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +8,7 @@
     max-width: 1200px;
     margin: auto;
     margin-top: 40px;
+    /* overflow-y: scroll; */
 }
 
 body {
@@ -17,71 +18,68 @@ body {
     background-color: #FFFEF8;
 }
 
-header {
-    position: relative;
-    height: 72px;
+nav {
     
+    position: relative;
+    min-height: 48px;
 }
 
-header button {
-    display: inline-block;
+nav #logo {
+    height: 100%; /* Картинка будет занимать 100% высоты родительского элемента */
+  }
+
+  nav #logo img {
+    height: 100%; /* Займет 100% высоты родительского элемента */
+    object-fit: contain; /* Масштабирует картинку, чтобы она полностью поместилась внутри кнопки */
+  }
+
+nav button {
     color: #3A211D;
-    line-height: .65em;
-    position: absolute;
-    bottom: 20px;
+    font-size: 32px;
     background: none;
     border: 0;
     font-family: Montserrat, serif;
     cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    height: 1em;
+}
+
+.test {
+    position: relative;
 }
 
 
-button.logo img{
-    height: 72px;
-    width: 78px;
-}
-
-button.logo {
+#logo {
     bottom: 0;
 }
 
-header button.heroes, header button.book {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-
-
-header button.active, header button:hover {
-    color: #A51842;
-    font-weight: 700;
-}
-
-header button.name {
-    color: #3A211D;
+#title {
     font-size: 40px;
     font-weight: 700;
-    left: 95px;
+    
 }
 
-
-header button.heroes {
-    left: 51%;
+#book {
+    left: calc(48% + 100px);
 }
 
-header button.book {
-    left: 60%;
-}
-
-header button.author {
+#author {
     right: 0;
     font-size: 38px;
     font-weight: 600;
     color: #37342E;
 }
 
+#heroes,  #book {
+    font-size: 24px;
+    font-weight: 600;
+}
 
-header button.heroes:hover, header button.book:hover {
+
+
+button#heroes:hover, button#book:hover, button#heroes.active, button#book.active {
+    color: #A51842;
     font-weight: 700;
 }
 
@@ -137,11 +135,10 @@ footer div.readers {
     margin-left: 10px;
 }
 
-@media (max-width: 1336px) {
+/* @media (max-width: 1336px) {
 
     .screen {
-        margin-top: 0;
-        margin-left: 10px;
+        margin: 20px 40px;
     }
 
     header {
@@ -162,14 +159,6 @@ footer div.readers {
         font-size: 36px;
     }
 
-    /* header button.heroes {
-        left: 543px;
-    }
-
-    header button.book {
-        left: 658px;
-    } */
-
     header button.author {
         font-size: 32px;
         right: 5px;
@@ -179,12 +168,9 @@ footer div.readers {
         margin-top: 0;
         margin-bottom: 0;
     }  
-}
+} */
 
-@media (max-width: 1152px) {
-    .screen {
-        margin-top: 10px;
-    }
+/* @media (max-width: 1152px) {
 
     header {
         height: 48px;
@@ -205,12 +191,12 @@ footer div.readers {
     }
 
     header button.heroes {
-        /* left: 510px; */
+        /* left: 510px; 
         font-size: 22px;
     }
 
     header button.book {
-        /* left: 616px; */
+        /* left: 616px; 
         font-size: 22px;
     }
 
@@ -221,10 +207,10 @@ footer div.readers {
     /* footer {
         margin-top: 0;
         margin-bottom: 0;
-    }   */
-}
+    }   
+} */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     
 
     header {
@@ -253,7 +239,7 @@ footer div.readers {
     header button.book {
         left: 510px;
         font-size: 22px;
-    } */
+    } 
 
     header button.author {
         font-size: 30px;
@@ -262,5 +248,5 @@ footer div.readers {
     /* footer {
         margin-top: 0;
         margin-bottom: 0;
-    }   */
-}
+    }   
+} */
