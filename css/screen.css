@@ -5,9 +5,9 @@
     /* overflow-y: scroll; */
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1320px) {
     .screen {
-        margin: 0 40px;
+        margin: 0 60px;
         margin-top: 20px;
     }
 }

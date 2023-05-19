@@ -26,7 +26,7 @@ function setNavHeight() {
 
   textButtons.style.height = textButtonsHeight + '%';
 
-  var spaceBetweenButtons = Math.max(3, navWidth / 100); 
+  var spaceBetweenButtons = Math.max(5, navWidth / 100); 
 
   title.style.left = logoWidth + spaceBetweenButtons + 'px';
 
@@ -36,11 +36,11 @@ function setNavHeight() {
 
   var heroesLeft = mid - heroesWidth - spaceBetweenButtons;
 
-  heroesLeft = (left < heroesLeft) ? heroesLeft : left + spaceBetweenButtons;
+  heroesLeft = Math.max(heroesLeft, left + spaceBetweenButtons);
 
-  var bookLeft = mid + 10;
+  var bookLeft = mid + spaceBetweenButtons;
 
-  bookLeft = (left + heroesWidth + spaceBetweenButtons < bookLeft) ? bookLeft : left + heroesWidth + spaceBetweenButtons;
+  bookLeft = Math.max(bookLeft, left + spaceBetweenButtons * 2 + heroesWidth);
 
   heroes.style.left = heroesLeft + 'px';
   book.style.left = bookLeft + 'px';
