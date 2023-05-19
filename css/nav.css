@@ -1,7 +1,7 @@
 :root {
-    --font-size-title: max(3vw, 28px);
-    --font-size-heroes-book: max(1.7vw, 18px);
-    --font-size-author: max(2.8vw, 26px);
+    --font-size-title: min(max(3vw, 28px), 40px);
+    --font-size-heroes-book: min(max(1.7vw, 18px), 24px);
+    --font-size-author: min(max(2.8vw, 26px), 38px);
 }
 
 nav {
