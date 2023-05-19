@@ -1,0 +1,13 @@
+.screen {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    /* overflow-y: scroll; */
+}
+
+@media (max-width: 1280px) {
+    .screen {
+        margin: 0 40px;
+        margin-top: 20px;
+    }
+}

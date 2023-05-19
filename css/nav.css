@@ -1,0 +1,62 @@
+:root {
+    --font-size-title: max(3vw, 28px);
+    --font-size-heroes-book: max(1.7vw, 18px);
+    --font-size-author: max(2.8vw, 26px);
+}
+
+nav {
+    position: relative;
+    min-height: 48px;
+    
+}
+
+nav button {
+    color: #3A211D;
+    font-size: 32px;
+    background: none;
+    border: 0;
+    font-family: Montserrat, serif;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    height: 1em;
+}
+
+#logo {
+    height: 100%;
+    /* Картинка будет занимать 100% высоты родительского элемента */
+    bottom: 0;
+}
+
+#logo img {
+    height: 100%;
+    /* Займет 100% высоты родительского элемента */
+    /* object-fit: contain; */
+    /* Масштабирует картинку, чтобы она полностью поместилась внутри кнопки */
+}
+
+#nav-text-buttons {
+    position: relative;
+}
+
+#title {
+    font-size: var(--font-size-title);
+    font-weight: 700;
+}
+
+#heroes,  #book {
+    font-size: var(--font-size-heroes-book);
+    font-weight: 600;
+}
+
+#author {
+    right: 0;
+    font-size: var(--font-size-author);
+    font-weight: 600;
+    color: #37342E;
+}
+
+button#heroes:hover, button#book:hover, button#heroes.active, button#book.active {
+    color: #A51842;
+    font-weight: 700;
+}

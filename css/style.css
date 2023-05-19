@@ -4,83 +4,12 @@
     margin: 0;
 }
 
-.screen {
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 40px;
-    /* overflow-y: scroll; */
-}
-
 body {
     font-family: Montserrat, serif;
     color: #3A211D;
     font-weight: 400;
     background-color: #FFFEF8;
-}
-
-nav {
-    
-    position: relative;
-    min-height: 48px;
-}
-
-nav #logo {
-    height: 100%; /* Картинка будет занимать 100% высоты родительского элемента */
-  }
-
-  nav #logo img {
-    height: 100%; /* Займет 100% высоты родительского элемента */
-    object-fit: contain; /* Масштабирует картинку, чтобы она полностью поместилась внутри кнопки */
-  }
-
-nav button {
-    color: #3A211D;
-    font-size: 32px;
-    background: none;
-    border: 0;
-    font-family: Montserrat, serif;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    height: 1em;
-}
-
-.test {
-    position: relative;
-}
-
-
-#logo {
-    bottom: 0;
-}
-
-#title {
-    font-size: 40px;
-    font-weight: 700;
-    
-}
-
-#book {
-    left: calc(48% + 100px);
-}
-
-#author {
-    right: 0;
-    font-size: 38px;
-    font-weight: 600;
-    color: #37342E;
-}
-
-#heroes,  #book {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-
-
-button#heroes:hover, button#book:hover, button#heroes.active, button#book.active {
-    color: #A51842;
-    font-weight: 700;
+    padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
 
 
