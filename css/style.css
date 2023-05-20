@@ -12,13 +12,17 @@ body {
     padding: 0 calc(20px - (100vw - 100%)) 0 0;
 }
 
+main {
+    display: flex;
+}
+
 
 footer {
     float: left;
     height: auto;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 43px;
+    margin-top: 1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,7 +52,7 @@ footer div.readers {
     border-radius: 16px;
     font-size: 16px;
     line-height: 100%;
-
+    
     width: 243px;
     height: 50px;
     display: flex;

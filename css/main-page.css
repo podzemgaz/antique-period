@@ -1,0 +1,57 @@
+:root {
+    --font-size-h1: min(4vw, 60px);
+}
+
+aside {
+    width: 43%;
+}
+
+aside h1 {
+    margin-top: 3vw;
+    font-weight: 600;
+    font-size: var(--font-size-h1);
+}
+
+aside p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 28px */
+    display: inline-block;
+
+    /* text-align: justify; */
+    /* display: inline-block; */
+    /* width: 446px; */
+    margin-left: 2px;
+    /* width: 75%; */
+    width: 90%;
+}
+
+aside button {
+    display: inline-block;
+    background-color: #86C266;
+    padding: min(20px, 1vw) min(70px, 4vw);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: min(28px, 2vw);
+    line-height: 34px;
+    border-radius: 40px;
+    margin-top: min(70px, 4vw);
+    
+    border: none;
+    cursor: pointer;
+}
+
+aside button:hover {
+    background-color: #ADE390;
+}
+
+article {
+    width: 57%;
+}
+
+article img {
+    width: 100%;
+}
